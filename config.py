@@ -13,7 +13,7 @@ class Config:
         self.free_generations: int = int(os.getenv("FREE_GENERATIONS", "2"))
         self.db_url: str = os.getenv(
             "DATABASE_URL",
-            "postgresql://t_bot:t_bot_secure_2026@localhost:5432/t_bot_db",
+            "postgresql://user:password@localhost:5432/t_bot_db",
         )
         self.gen_cost: int = int(os.getenv("GEN_COST", "2500"))  # в копейках
 
